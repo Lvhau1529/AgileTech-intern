@@ -1,0 +1,30 @@
+:root {
+  --color-main: #FA6980;
+  --color-hover: #EBEDED;
+  --color-mainText: #202124;
+  --color-subText: #A6ADB4;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-blue: #72ACFF;
+	--color-green: #52E5BA;
+  --font-main: 'Roboto', sans-serif;
+}
+
+/* Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes headerSlideDown  {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}

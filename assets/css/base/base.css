@@ -1,0 +1,63 @@
+* {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.5rem;
+	box-sizing: border-box;
+	font-family: var(--font-main);
+}
+
+a {
+	text-decoration: none;
+	line-height: 1.5rem;
+}
+
+ul {
+	list-style: none;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+/* Large Desktop */
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+/* Desktop */
+@media (max-width: 1440px) {
+	.container {
+		max-width: 1160px;
+		padding: 0 140px;
+	}
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+	.container {
+		max-width: 608px;
+		padding: 0 80px;
+	}
+}
+
+/* Mobie */
+@media (max-width: 375px) {
+	.container {
+		max-width: 327px;
+		padding: 0 24px;
+	}
+}

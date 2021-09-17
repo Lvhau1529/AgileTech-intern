@@ -1,0 +1,39 @@
+.header {
+	width: 100%;
+	height: 5rem;
+	background-color: var(--color-whtie);
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	align-items: center;
+}
+
+.header-logo a {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--color-main);
+}
+.header-nav {
+	height: 100%;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.nav-item {
+	margin-left: 2.2rem;
+}
+.nav-link {
+	text-transform: uppercase;
+	font-weight: 600;
+	display: block;
+	height: 100%;
+	color: var(--color-black);
+}
+.nav-item-avt {
+	height: 100%;
+}
+.nav-item.nav-item-avt {
+}
