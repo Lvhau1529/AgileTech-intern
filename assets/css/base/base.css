@@ -6,7 +6,7 @@
 
 html {
 	font-size: 62.5%;
-	line-height: 1.5rem;
+	line-height: 2.6rem;
 	box-sizing: border-box;
 	font-family: var(--font-main);
 }
@@ -30,6 +30,11 @@ ul {
 
 .justify-content-between {
 	justify-content: space-between;
+}
+
+.wrapper {
+	max-width: 1800px;
+	margin: 0 auto;
 }
 
 /* Large Desktop */

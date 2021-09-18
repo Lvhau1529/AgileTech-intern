@@ -1,23 +1,24 @@
-.button-component {
-	border-radius: 2.5rem;
+.component-btn {
+	border-radius: 0.6rem;
 	outline: 0;
-	border: none;
 	cursor: pointer;
 	transition: 0.3s ease;
 	border: 1px solid transparent;
 	white-space: nowrap;
 	padding: 1.5rem 3rem;
-	color: var(--color-white);
-	font-size: 1.6rem;
-	font-weight: 600;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 15.2rem;
 }
-
+.component-btn a {
+	color: var(--color-white);
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
 .primary-btn {
-	border-color: #ff9500;
-	background-color: #ff9500;
+	background-color: var(--color-main);
 }
 .primary-btn:hover {
 	background-color: var(--color-hover);
