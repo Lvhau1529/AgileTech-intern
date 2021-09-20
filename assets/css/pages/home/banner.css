@@ -1,8 +1,9 @@
 .jumbotron {
-	max-height: 60rem;
+	/* max-height: 60rem; */
 }
 .jumbotron-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 }
 .jumbotron-hero {
 	max-height: 60rem;

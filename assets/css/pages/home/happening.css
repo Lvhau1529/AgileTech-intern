@@ -1,0 +1,120 @@
+.happening {
+	padding-bottom: 10rem;
+}
+.happening-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -4rem;
+	width: 100%;
+}
+.happening-item {
+	margin-left: 4rem;
+}
+.happening-item:first-child {
+	flex: 0 0 calc(66.66% - 4rem);
+	max-width: calc(66.66% - 4rem);
+}
+.happening-item:last-child {
+	flex: 0 0 calc(33.33% - 4rem);
+	max-width: calc(33.33% - 4rem);
+}
+.happening-card-large {
+	display: flex;
+	flex-direction: column;
+}
+.card-large-item {
+}
+.card-item-background {
+	height: 43rem;
+	background-image: url(../../../images/card_happening_large_1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 4rem;
+	border-radius: 6px;
+}
+.card-item-content {
+	padding: 4rem;
+	font-size: 1.6rem;
+	color: var(--color-white);
+	height: 100%;
+}
+.card-item-tag {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.card-item-title {
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin-bottom: auto;
+}
+.card-item-subtitle {
+}
+
+/* Right block */
+.happening-card-small {
+	display: flex;
+	flex-direction: column;
+}
+.card-small-item {
+	margin-bottom: 4rem;
+}
+.card-item-img {
+	width: 100%;
+	height: 18rem;
+	overflow: hidden;
+	border-radius: 6px;
+}
+.card-item-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+.card-item-title {
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-top: 2rem;
+}
+.card-content-time {
+}
+.card-time-icon {
+	transform: translateY(9%);
+}
+.card-time-min {
+}
+
+@media screen and (max-width: 768px) {
+	.happening .happening-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.happening-card-small {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-left: -4rem;
+	}
+	.card-small-item:last-child {
+		display: none;
+	}
+	.card-small-item {
+		flex: 0 0 calc(50% - 4rem);
+		max-width: calc(50% - 4rem);
+		margin-left: 4rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.happening-card-small {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.card-small-item:last-child {
+		display: block;
+	}
+	.card-small-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

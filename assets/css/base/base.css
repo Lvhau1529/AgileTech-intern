@@ -47,15 +47,21 @@ ul {
 @media (max-width: 1440px) {
 	.container {
 		max-width: 1160px;
-		padding: 0 140px;
+		/* padding: 0 140px; */
 	}
 }
+
+/* @media (max-width: 1024px) {
+	.container {
+		padding: 0 4rem;
+	}
+} */
 
 /* Tablet */
 @media (max-width: 768px) {
 	.container {
 		max-width: 608px;
-		padding: 0 80px;
+		/* padding: 0 80px; */
 	}
 }
 
@@ -63,6 +69,10 @@ ul {
 @media (max-width: 375px) {
 	.container {
 		max-width: 327px;
-		padding: 0 24px;
+		/* padding: 0 24px; */
 	}
+}
+
+.main-wrapper {
+	background-color: #f6f8f9;
 }
