@@ -5,7 +5,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -4rem;
-	width: 100%;
 }
 .happening-item {
 	margin-left: 4rem;
@@ -84,6 +83,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	.happening-wrapper {
+		width: 100%;
+	}
 	.happening .happening-item {
 		flex: 0 0 100%;
 		max-width: 100%;
