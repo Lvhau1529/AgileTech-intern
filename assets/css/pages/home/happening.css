@@ -28,6 +28,17 @@
 	background-position: center center;
 	margin-bottom: 4rem;
 	border-radius: 6px;
+	position: relative;
+}
+.card-item-background::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.2;
 }
 .card-large-item:last-child .card-item-background {
 	background-image: url(../../../images/card_happening_large_2.png);
@@ -36,9 +47,9 @@
 	padding: 4rem;
 	font-size: 1.6rem;
 	color: var(--color-white);
-	height: 100%;
 	display: flex;
 	flex-direction: column;
+	height: 43rem;
 }
 .card-item-tag {
 	text-transform: uppercase;
@@ -105,11 +116,12 @@
 		margin-left: 4rem;
 	}
 	.card-item-background {
-		/* height: 30rem; */
+		max-height: unset;
 	}
 	.card-item-content {
 		padding: 2.4rem;
 		display: block;
+		height: unset;
 	}
 }
 

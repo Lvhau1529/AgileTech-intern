@@ -44,32 +44,26 @@ ul {
 }
 
 /* Desktop */
-@media (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
 	.container {
-		max-width: 1160px;
-		/* padding: 0 140px; */
+		max-width: calc(1160px + 40px);
+		padding: 40px;
 	}
 }
-
-/* @media (max-width: 1024px) {
-	.container {
-		padding: 0 4rem;
-	}
-} */
 
 /* Tablet */
 @media (max-width: 768px) {
 	.container {
-		max-width: 608px;
-		/* padding: 0 80px; */
+		max-width: calc(608px + 24px);
+		padding: 24px;
 	}
 }
 
 /* Mobie */
 @media (max-width: 375px) {
 	.container {
-		max-width: 327px;
-		/* padding: 0 24px; */
+		max-width: calc(327px + 12px);
+		padding: 0 12px;
 	}
 }
 
