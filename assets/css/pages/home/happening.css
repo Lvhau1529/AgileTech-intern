@@ -30,16 +30,6 @@
 	border-radius: 6px;
 	position: relative;
 }
-.card-item-background::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	opacity: 0.2;
-}
 .card-large-item:last-child .card-item-background {
 	background-image: url(../../../images/card_happening_large_2.png);
 }
@@ -50,6 +40,7 @@
 	display: flex;
 	flex-direction: column;
 	height: 43rem;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 .card-item-tag {
 	text-transform: uppercase;
