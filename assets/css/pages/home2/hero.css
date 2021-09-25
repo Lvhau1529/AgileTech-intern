@@ -1,0 +1,125 @@
+.hero-wrapper {
+}
+.hero-bg {
+	min-height: 60rem;
+	background: black url(../../../images/hero.png);
+	/* background-image: url(../../../images/hero.png); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.hero-content {
+	min-height: 60rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	padding: 5rem;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-content-item:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.hero-content-item:nth-child(2) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10rem;
+}
+.hero-content-item:last-child {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.hero-content-title h1 {
+	font-size: 5rem;
+	font-weight: 600;
+}
+.hero-content-topic {
+	display: flex;
+	align-items: center;
+	margin-top: 3rem;
+}
+.hero-content-topic:not(:first-child) {
+	margin-left: 2rem;
+}
+.topic-icon {
+	margin-right: 1rem;
+	height: 1.8rem;
+}
+.hero-content-author {
+	display: flex;
+	align-items: center;
+}
+.author-icon img {
+	width: 4rem;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+.author-name {
+	margin-left: 2rem;
+}
+.hero-content-story {
+	padding: 3rem;
+	border: 2px dashed var(--color-subText);
+	border-radius: 6px;
+	max-width: 36rem;
+}
+.story-title a {
+	color: var(--color-main);
+}
+.story-desc {
+	font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-content-title h1 {
+		font-size: 3rem;
+	}
+	.hero-content-story {
+		padding: 2rem;
+	}
+	.story-desc {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.hero-bg {
+		min-height: 40rem;
+	}
+	.hero-content {
+		min-height: 40rem;
+	}
+	.hero-content-title h1 {
+		text-align: center;
+	}
+	.hero-content {
+		padding: 2.4rem;
+	}
+	.hero-content-item:nth-child(2) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 6rem;
+	}
+	.hero-content-item:last-child {
+		align-items: center;
+	}
+	.hero-content-story {
+		padding: 0;
+		border: none;
+	}
+	.author-name {
+		display: none;
+	}
+	.story-subtitle {
+		display: none;
+	}
+}

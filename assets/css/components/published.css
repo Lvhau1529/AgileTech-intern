@@ -1,0 +1,40 @@
+/* 
+// Component published
+<div class="published-component hasAuthor">
+  <div class="published-component-icon">
+    <img src="./assets/images/icons/time.png" alt="">
+  </div>
+  <div class="published-component-time">3h ago&nbsp</div>
+  <div class="published-component-author">by <span>Worldnews</span></div>
+</div> */
+
+.published-component {
+	display: flex;
+	align-items: center;
+	font-size: 1.3rem;
+	color: var(--color-subText);
+}
+.published-component-icon {
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: 1rem;
+	transform: translateY(-12%);
+}
+.published-component-icon img {
+	width: 100%;
+	height: 100%;
+}
+.published-component-author span {
+	text-decoration: underline;
+}
+
+/*Add hasTime and hasAuthor class */
+.published-component.hasTime > .published-component-time {
+	font-style: italic;
+}
+.published-component.hasTime > .published-component-author {
+	display: none;
+}
+.published-component.hasAuthor > .published-component-author {
+	display: block;
+}
